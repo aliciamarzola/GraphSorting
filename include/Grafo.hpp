@@ -3,19 +3,17 @@
 
 #include "Node.hpp"
 
-class Grafo{
+class Grafo {
 private:
-    int tamanho;
-    No* vertices;
+  int tamanho;
+  No *vertices;
+
 public:
-
-    Grafo(int t);
-    int GetTamanho();
-    void addNo(No no);
-    bool found(int* vizinhos, int len, int x, int cores[]);
-    char isGreedy(int cores[]);
-
+  Grafo(int t);
+  int GetTamanho();
+  void addNo(No no);
+  bool found(const int *vizinhos, int len, int x, const int cores[]);
+  char isGreedy(int cores[]);
 };
-
 
 #endif
