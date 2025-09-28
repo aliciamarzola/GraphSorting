@@ -22,7 +22,7 @@
         vertices[index] = no;
     }
 
-    bool Grafo::found(int* vizinhos, int len, int x, int cores[]){
+    bool Grafo::found(const int* vizinhos, int len, int x, const int cores[]){
         if (vizinhos == nullptr) {
             throw std::invalid_argument("A matriz de vizinhos não pode ser nula.");
         }

@@ -243,7 +243,7 @@ void Sorts::Heapify(int permutacao[], int cores[], int len, int i){
     }
 }
 
-int Sorts::findMax(int cores[], int len){
+int Sorts::findMax(const int cores[], int len){
     int max = 0;
     for (int i = 0; i < len; i++) {
         if (cores[i] >= cores[max]) {

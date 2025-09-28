@@ -34,7 +34,7 @@ public:
 
     // Método Próprio
     void Own(Grafo grafo, int cores[]);
-    int findMax(int cores[], int len);
+    int findMax(const int cores[], int len);
 
 
 };

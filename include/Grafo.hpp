@@ -12,7 +12,7 @@ public:
     Grafo(int t);
     int GetTamanho();
     void addNo(No no);
-    bool found(int* vizinhos, int len, int x, int cores[]);
+    bool found(const int* vizinhos, int len, int x, const int cores[]);
     char isGreedy(int cores[]);
 
 };
