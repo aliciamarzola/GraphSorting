@@ -25,10 +25,10 @@ bool Grafo::found(const int *vizinhos, int len, int x, const int cores[]) {
   for (int i = 0; i < len; i++) {
     int indice = vizinhos[i];
     if (cores[indice] == x) {
-      return 1;
+      return true;
     }
   }
-  return 0;
+  return false;
 }
 
 char Grafo::isGreedy(int cores[]) {
